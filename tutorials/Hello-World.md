@@ -55,7 +55,7 @@ end
 function love.update(dt)
    timer = timer + dt
    if timer >= timerLimit then
-      randnum = math.random(3)
+      randnum = love.math.random(3)
       if randnum == 1 then
          love.graphics.setColor(255,0,0)
       elseif randnum == 2 then
