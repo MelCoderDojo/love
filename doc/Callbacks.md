@@ -1,33 +1,32 @@
-## Note
-This is currently unfinished.
+## Page Contents
 
-* love.[draw](#draw)
-* love.errhand
-* love.focus
-* love.gamepadaxis
-* love.gamepadpressed
-* love.gamepadreleased
-* love.joystickadded
-* love.joystickaxis
-* love.joystickhat
-* love.joystickpressed
-* love.joystickreleased
-* love.joystickremoved
-* love.keypressed
-* love.keyreleased
-* love.load
-* love.mousefocus
-* love.mousepressed
-* love.mousereleased
-* love.quit
-* love.resize
-* love.run
-* love.textinput
-* love.threaderror
-* love.update
-* love.visible
+* [love.draw](#lovedraw)
+* [love.errhand](#loveerrhand)
+* [love.focus](#lovefocus)
+* [love.gamepadaxis](#lovegamepadaxis)
+* [love.gamepadpressed](#lovegamepadpressed)
+* [love.gamepadreleased](#lovegamepadreleased)
+* [love.joystickadded](#lovejoystickadded)
+* [love.joystickaxis](#lovejoystickaxis)
+* [love.joystickhat](#lovejoystickhat)
+* [love.joystickpressed](#lovejoystickpressed)
+* [love.joystickreleased](#lovejoystickreleased)
+* [love.joystickremoved](#lovejoystickremoved)
+* [love.keypressed](#lovekeypressed)
+* [love.keyreleased](#lovekeyreleased)
+* [love.load](#loveload)
+* [love.mousefocus](#lovemousefocus)
+* [love.mousepressed](#lovemousepressed)
+* [love.mousereleased](#lovemousereleased)
+* [love.quit](#lovequit)
+* [love.resize](#loveresize)
+* [love.run](#loverun)
+* [love.textinput](#lovetextinput)
+* [love.threaderror](#lovethreaderror)
+* [love.update](#loveupdate)
+* [love.visible](#lovevisible)
 
-## love.<a name="draw">draw</a>
+## love.draw
 
 Callback function used to draw on the screen every frame.
 
@@ -35,7 +34,7 @@ Callback function used to draw on the screen every frame.
 love.draw()
 ```
 
-## love.errhand <a name="errhand"></a>
+## love.errhand
 
 The error handler, used to display error messages.
 
@@ -317,64 +316,3 @@ love.visible( v )
 | Variable |      Type      |                   Description                   |
 | -------- | -------------- | ----------------------------------------------- |
 | v        | boolean        | Window visibility.                              |
-
-Data
-
-The superclass of all data.
-
-Functions
-
-Data:getSize
-
-Data:getString
-
-Supertypes
-
-Object
-
-Data:getSize
-
-Gets the size of the Data.
-
-size = Data:getSize()
-size	number	The size of the Data in bytes.
-
-Data:getString
-
-Gets the full Data as a string.
-
-data = Data:getString()
-data	string	The raw data.
-
-Drawable
-
-Superclass for all things that can be drawn on screen. This is an abstract type that can't be created directly.
-
-Supertypes
-
-Object
-
-Object
-
-The superclass of all LÖVE types.
-
-Functions
-
-Object:type
-
-Object:typeOf
-
-Object:type
-
-Gets the type of the object as a string.
-
-type = Object:type()
-type	string	The type as a string.
-
-Object:typeOf
-
-Checks whether an object is of a certain type. If the object has the type with the specified name in its hierarchy, this function will return true.
-
-b = Object:typeOf( name )
-b	boolean	True if the object is of the specified type, false otherwise.
-name	string	The name of the type to check for.
